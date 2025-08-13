@@ -10,7 +10,7 @@ public class UpperBound {
     public static int findUB(int[] input, int item){
         int low = 0;
         int high = input.length -1;
-        int res = -1;
+        int res = input.length;
         while (low<=high){
             int mid = low + (high-low)/2;
             if(input[mid] > item){
