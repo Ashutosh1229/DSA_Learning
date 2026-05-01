@@ -57,7 +57,7 @@ public class DFSGraphWithExplanation {
         // if the adjacent node is not visited then we call the recursion to add it to response and update visited array
         for(int i: graph.get(start)){
             if(!visArr[i]){
-                performDFS(visArr, i, graph, res);
+                    performDFS(visArr, i, graph, res);
             }
         }
     }
